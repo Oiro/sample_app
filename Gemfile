@@ -10,9 +10,19 @@ gem 'bcrypt'
 
 gem 'faker'
 
+gem 'puma'
+
+gem 'carrierwave'
+
+gem 'mini_magick'
+
+gem 'fog'
+
 gem 'will_paginate'
 
 gem 'bootstrap-will_paginate'
+
+
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
 # Use SCSS for stylesheets
@@ -33,6 +43,8 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -40,14 +52,23 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'unicorn'
 
 # Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+# gem 'capistrano-rails', 
+# group :development do
+  # gem 'web-console'
+
+# end
+
 group :development do
 
   gem 'web-console'
 
-# end
+end
 
-# group :development, :test do
+
+group :development, :test do
+
+  # gem 'web-console'
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'sqlite3'
   gem 'byebug'
@@ -70,7 +91,9 @@ end
 group :production do
 	gem 'pg'
 	gem 'rails_12factor'
-  gem 'puma'
+  # gem 'puma'
 
 end
+
+
 
