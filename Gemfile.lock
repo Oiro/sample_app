@@ -343,6 +343,7 @@ DEPENDENCIES
   guard-minitest
   jbuilder (~> 2.0)
   jquery-rails
+  json
   mini_backtrace
   mini_magick
   minitest-reporters
