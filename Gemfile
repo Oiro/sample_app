@@ -53,16 +53,16 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', 
-# group :development do
-  # gem 'web-console'
-
-# end
-
 group :development do
 
   gem 'web-console'
+  gem 'guard'
+  gem 'spring'
+  # gem 'rake'
 
 end
+
+
 
 
 group :development, :test do
@@ -73,16 +73,19 @@ group :development, :test do
   gem 'sqlite3'
   gem 'byebug'
   # gem 'web-console'
-  gem 'spring'
+  # gem 'spring'
 
 end
+
+
 
 group :test do
   # Access an IRB console on exception pages or by using <%= console %> in views
   # gem 'web-console', '~> 2.0'
-  gem 'guard'
+  
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   # gem 'spring'
+  gem 'rake'
   gem 'minitest-reporters'
   gem 'mini_backtrace'
   gem 'guard-minitest'
